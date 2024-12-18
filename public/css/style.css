@@ -1,0 +1,246 @@
+/* Custom styles for navbar links */
+.custom-navbar {
+    background-color: #16beb6; /* Replace with your desired color */
+  }
+
+.navbar-nav.custom-navbar {
+    display: flex;
+    justify-content: center; /* This centers the items horizontally */
+    align-items: center; /* This ensures the items are vertically aligned (if needed) */
+    gap: 15px; /* Space between items (adjust as needed) */
+}
+
+/* Optional: You can also manually adjust positioning if you need more control */
+.navbar-nav.custom-navbar li {
+    padding: 0 15px; /* Adjust the space between individual items */
+}
+
+.navbar-nav .nav-link {
+    font-family:'Montserrat'; /* Change to any font */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Makes the text bold */
+    color: #413c34; /* Change color */
+    text-transform: uppercase; /* Optional: to capitalize the links */
+}
+
+
+.btn-primary {
+    background-color: #008000;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+    padding: 12px 20px; /* Add even padding for top, bottom, left, and right */
+    border-radius: 30px; /* Rounded button */
+    text-align: center; /* Ensure text is centered */
+    line-height: 1.2; /* Maintain proper line height for better text alignment */
+    transition: all 0.3s ease;
+    display: inline-block; /* Ensure proper alignment */
+}
+
+.btn-primary:hover {
+    background-color: #3cb043; /* Darker blue on hover */
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.2); /* Hover shadow */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+.btn-primary:active {
+    background-color: #ffffff; /* Even darker blue */
+    box-shadow: none;
+    transform: translateY(1px); /* Pressed effect */
+}
+
+
+/* product design */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    padding: 25px;
+}
+
+.product-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px; /* Reduced padding for a smaller card */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 450px; /* Set a specific height for consistency */
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Centers the content horizontally */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 200px; /* Allow the width to be flexible */
+    height: 250px; /* Fixed height for image */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-info h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px; /* Reduced font size */
+    font-weight: bold;
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+.product-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px; /* Reduced font size */
+    color: #333;
+    margin-bottom: 10px; /* Added margin to separate description from actions */
+}
+
+.product-actions {
+    margin-top: 10px; /* Reduced space before the action buttons */
+    display: flex;
+    justify-content: center; /* Align buttons to the left */
+    gap: 5px; /* Reduce the space between the buttons */
+    padding: 5px;
+}
+
+/* Action buttons */
+.product-actions button {
+    margin-right: 5px; /* Add a small space between buttons if necessary */
+}
+
+
+
+/* Customize the confirm button */
+.custom-confirm-btn {
+    background-color: #28a745 !important; /* Green background */
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Customize the cancel button */
+.custom-cancel-btn {
+    background-color: #dc3545 !important; /* Red background */
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Hover effects for the buttons */
+.custom-confirm-btn:hover {
+    background-color: #218838 !important; /* Darker green */
+}
+
+.custom-cancel-btn:hover {
+    background-color: #c82333 !important; /* Darker red */
+}
+
+/* search bar */
+.search-form {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Set a max-width for a more professional appearance */
+    margin-left: 400px; /* Move the form 20px to the right */
+    margin-right: auto; /* Keep the form from shifting too far */
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Search Input Field */
+.search-input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    background-color: #f8f8f8;
+    color: #333;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.search-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.search-input:focus::placeholder {
+    color: transparent;
+}
+
+/* Search Button */
+.search-btn {
+    background-color: #1a78db;
+    color: white;
+    border: none;
+    font-size: 18px; /* Updated font size */
+    font-weight: 600; /* Added font weight for boldness */
+    padding: 12px 20px;
+    border-radius: 30px; /* Rounded button */
+    transition: all 0.3s ease; /* Smooth transitions for hover and active states */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+}
+
+.search-btn:hover {
+    background-color: #0026ff;
+    color: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Hover shadow */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+.search-btn:active {
+    background-color: #003d7a;
+    transform: translateY(1px); /* Pressed effect */
+    box-shadow: none;
+}
+
+/* create form */
+body {
+    background-color: #f9f9f9; /* Light gray background for contrast */
+    font-family: 'Montserrat', sans-serif; /* Professional font style */
+}
+
+h1 {
+    font-weight: bold;
+    color: #343a40; /* Dark color for the title */
+}
+
+.card {
+    border: none; /* Remove default card border */
+    border-radius: 12px; /* Smooth rounded corners */
+    background-color: #ffffff; /* White card background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.form-label {
+    font-weight: 600; /* Bold labels */
+    color: #495057; /* Darker gray for labels */
+}
+
+.form-control {
+    border-radius: 8px; /* Smooth input corners */
+    border: 1px solid #ced4da; /* Light gray border */
+    padding: 10px 15px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glowing effect on focus */
+}
